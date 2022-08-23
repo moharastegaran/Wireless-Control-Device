@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WIRELESS Control Device</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="outer-container">
+    <div class="outer-card py-4 px-2">
+        <div class="row flex-row align-items-stretch">
+            <div class="col-7">
+                <div class="d-flex flex-column justify-content-around bg-dark-red rounded h-100 p-4">
+                    <div class="row align-items-start">
+                        <div class="col-1 text-left p-0">
+                            <button class="control-btn control-1 mb-4" data-control="1"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-3 mb-4" data-control="3"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-5 mb-4" data-control="5"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-7 mb-4" data-control="7"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-9 mb-4" data-control="9"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-11 mb-4" data-control="11"></button>
+                        </div>
+                        <div class="col-10 bg-white">
+                            <div class="row screen man dsc">
+                                <div class="col-2 p-0">
+                                    <div class="control-board board-1" data-control="1"></div>
+                                    <div class="control-board board-3" data-control="3"></div>
+                                    <div class="control-board board-5" data-control="5"></div>
+                                    <div class="control-board board-7" data-control="7"></div>
+                                    <div class="control-board board-9" data-control="9"></div>
+                                </div>
+                                <div class="col-8">
+                                    <div id="screen-board" class="position-relative h-100 pt-2"></div>
+                                </div>
+                                <div class="col-2 p-0">
+                                    <div class="control-board board-2" data-control="2"></div>
+                                    <div class="control-board board-4" data-control="4"></div>
+                                    <div class="control-board board-6" data-control="6"></div>
+                                    <div class="control-board board-8" data-control="8"></div>
+                                    <div class="control-board board-10" data-control="10"></div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2 p-0">
+                                            <div class="control-board"></div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="row">
+                                                <div class="col-4 p-0">
+                                                    <div class="control-board"></div>
+                                                </div>
+                                                <div class="col-4 p-0">
+                                                    <div class="control-board"></div>
+                                                </div>
+                                                <div class="col-4 p-0">
+                                                    <div class="control-board"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 p-0">
+                                            <div class="control-board"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-right p-0">
+                            <button class="control-btn control-2 mb-4" data-control="2"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-4 mb-4" data-control="4"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-6 mb-4" data-control="6"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-8 mb-4" data-control="8"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-10 mb-4" data-control="10"></button>
+                            <div class="new-line"></div>
+                            <button class="control-btn control-12 mb-4" data-control="12"></button>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="row justify-content-start">
+                                        <button class="action-btn action-on btn-multiline">On</button>
+                                        <div style="width: 12px"></div>
+                                        <button class="action-btn action-off btn-multiline">Off</button>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="row justify-content-around">
+                                        <button class="control-btn"></button>
+                                        <button class="control-btn"></button>
+                                        <button class="control-btn"></button>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row justify-content-end">
+                                        <button class="action-btn action-home btn-multiline">
+                                            Menu<br/>HOME
+                                        </button>
+                                        <div style="width: 12px"></div>
+                                        <button class="action-btn btn-multiline">
+                                            Menu<br/>UP
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 row">
+                <div class="col-6 pr-0">
+                    <div class="d-flex flex-column justify-content-around bg-light-purple rounded h-100 p-4">
+                        <div class="row flex-column justify-content-center">
+                            <div class="text-center mb-3">
+                                <button class="direction-btn" data-direction="ArrowUp">UP</button>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mb-3">
+                                <button class="direction-btn" data-direction="ArrowLeft">L</button>
+                                <button class="direction-btn" data-direction="ArrowRight">R</button>
+                            </div>
+                            <div class="text-center">
+                                <button class="direction-btn" data-direction="ArrowDown">DW</button>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="action-btn btn-multiline">
+                                ON<br/>OFF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 pr-0">
+                    <div class="d-flex flex-column justify-content-around bg-light-purple rounded h-100 p-4">
+                        <div class="row">
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-1 number-btn">1</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-2 number-btn">2</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-3 number-btn">3</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-4 number-btn">4</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-5 number-btn">5</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-6 number-btn">6</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-7 number-btn">7</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-8 number-btn">8</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-9 number-btn">9</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="action-btn action-backspace" style="width: 30px">&#8592;</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-0 number-btn">0</button>
+                            </div>
+                            <div class="col-4 justify-content-center mb-2 text-center p-0">
+                                <button class="number-dot number-btn">.</button>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between">
+                            <button class="action-btn action-clear">Clear</button>
+                            <button class="action-btn action-enter">Enter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">-->
+<!--    Open modal-->
+<!--</button>-->
+<!--<style>-->
+<!--    .switch {-->
+<!--        position: relative;-->
+<!--        display: inline-block;-->
+<!--        width: 40px;-->
+<!--        height: 23px;-->
+<!--        margin-bottom: 0;-->
+<!--    }-->
+
+<!--    .switch input {-->
+<!--        opacity: 0;-->
+<!--        width: 0;-->
+<!--        height: 0;-->
+<!--    }-->
+
+<!--    .slider {-->
+<!--        position: absolute;-->
+<!--        cursor: pointer;-->
+<!--        top: 0;-->
+<!--        left: 0;-->
+<!--        right: 0;-->
+<!--        bottom: 0;-->
+<!--        background-color: #ccc;-->
+<!--        -webkit-transition: .4s;-->
+<!--        transition: .4s;-->
+<!--    }-->
+
+<!--    .slider:before {-->
+<!--        position: absolute;-->
+<!--        content: "";-->
+<!--        height: 15px;-->
+<!--        width: 15px;-->
+<!--        left: 4px;-->
+<!--        bottom: 4px;-->
+<!--        background-color: white;-->
+<!--        -webkit-transition: .4s;-->
+<!--        transition: .4s;-->
+<!--    }-->
+
+<!--    input:checked + .slider {-->
+<!--        background-color: #2196F3;-->
+<!--    }-->
+
+<!--    input:focus + .slider {-->
+<!--        box-shadow: 0 0 1px #2196F3;-->
+<!--    }-->
+
+<!--    input:checked + .slider:before {-->
+<!--        -webkit-transform: translateX(17px);-->
+<!--        -ms-transform: translateX(17px);-->
+<!--        transform: translateX(17px);-->
+<!--    }-->
+
+<!--    /* Rounded sliders */-->
+<!--    .slider.round {-->
+<!--        border-radius: 34px;-->
+<!--    }-->
+
+<!--    .slider.round:before {-->
+<!--        border-radius: 50%;-->
+<!--    }-->
+<!--</style>-->
+<!--<div class="modal" id="myModal">-->
+<!--    <div class="modal-dialog modal-lg">-->
+<!--        <div class="modal-content">-->
+
+<!--            &lt;!&ndash; Modal Header &ndash;&gt;-->
+<!--            <div class="modal-header">-->
+<!--                <h4 class="modal-title">Edit Card data</h4>-->
+<!--                <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Modal body &ndash;&gt;-->
+<!--            <div class="modal-body">-->
+<!--                <form>-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-md-4">-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="channelNumberInput">Channel No:</label>-->
+<!--                                <input type="number" class="form-control" id="channelNumberInput">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4">-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="squalchRangeSlider">Squalch:</label>-->
+<!--                                <input type="range" class="form-control-range" id="squalchRangeSlider" min="0" max="8"-->
+<!--                                       step="1" value="0">-->
+<!--                                <span id="squalchValue">0</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4">-->
+<!--                            <label for="channelModeInput">Channel Mode:</label>-->
+<!--                            <div class="d-flex align-items-center">-->
+<!--                                <span>Costal</span>-->
+<!--                                <label class="switch mx-2">-->
+<!--                                    <input type="checkbox" checked id="channelModeInput">-->
+<!--                                    <span class="slider round"></span>-->
+<!--                                </label>-->
+<!--                                <span>Marine</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-12">-->
+<!--                            <input type="button" class="btn btn-primary" value="submit">-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </form>-->
+<!--            </div>-->
+<!--            <script>-->
+<!--                const rangeInput = document.querySelector("#squalchRangeSlider");-->
+<!--                rangeInput.addEventListener('change', (e) => {-->
+<!--                    document.querySelector("#squalchValue").innerText = e.target.value;-->
+<!--                });-->
+<!--            </script>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/base.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

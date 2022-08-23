@@ -1,0 +1,220 @@
+html,body{
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.outer-container{
+    min-width: 868px;
+    max-width: 869px;
+    margin: auto;
+}
+.outer-card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-width:100%;
+    word-wrap:break-word;
+    background-color:#cdcdcd;
+    border:1px solid rgba(0,0,0,.125);
+    box-shadow:0 .125rem .25rem rgba(0,0,0,.075);
+    border-radius: .25rem;
+}
+.bg-light-purple{
+    background-color: #a29fb0;
+}
+.bg-lighter{
+    background-color: #cdcdcd;
+}
+.bg-dark-red{
+    background-color: #300f16;
+}
+.number-btn{
+    background-color: #cdcdcd;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    width: 30px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 500;
+    align-self: center;
+    padding: 3px;
+}
+.control-btn{
+    background-color: #cdcdcd;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    width: 30px;
+    height: 20px;
+    color: #333333;
+}
+.action-btn{
+    background-color: #cdcdcd;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    color: #333333;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 2px;
+}
+.direction-btn{
+    background-color: #cdcdcd;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    color: #333333;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 40px;
+}
+.btn-multiline{
+    font-size: 10px;
+    padding-left: 11px;
+    padding-right: 11px;
+    line-height: 1.2;
+}
+.control-board{
+    width: 100%;
+    position: relative;
+    min-height: 40px;
+    border: 1px solid #787878;
+    padding: 5px;
+    font-size: 9px;
+    line-height: 1.6;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+    color: #383838;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.control-board:after{
+    content: 'Close';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    color: #383838;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.control-board.toggled:after{
+    display: flex;
+}
+.new-line{
+    width: 100%;
+}
+.row{
+    padding: 0;
+}
+
+.menu-bottom-right{
+    min-width: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 4%;
+    border: 1px solid #454545;
+    padding: 0 2px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    max-height: 175px;
+    overflow-y: auto;
+}
+.menu-bottom-right::-webkit-scrollbar{
+    width: 5px;
+    background-color:#5a6268 ;
+    border-radius: 4px;
+}
+.menu-bottom-right::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: #0b2e13;
+    border-radius: 4px;
+}
+
+.menu-item{
+    color: black;
+    min-width: fit-content;
+    font-size: 11px;
+    line-height: 1.4;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    flex-grow: 1;
+    max-lines: 1;
+    cursor: pointer;
+}
+.menu.small .menu-item{
+    font-size: 9px;
+    padding: 0 0.1rem;
+    line-height: 1.2;
+    flex-grow: unset;
+    font-weight: 700;
+}
+.menu.disabled .menu-item{
+    cursor: default;
+    pointer-events: none;
+}
+.menu-item:hover{
+    text-decoration: none;
+    color: black;
+ }
+.menu-item.focus{
+    color: white;
+    background-color: black;
+}
+.menu.horizontal{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+.menu.horizontal .menu-item{
+    margin: 0 .2rem;
+    padding: 0 .2rem;
+}
+
+.small-strong{
+    font-size: 9px;
+    font-weight: 700;
+}
+.small-stronger{
+    font-size: 9px;
+    font-weight: 700;
+}
+.editable.number{
+    flex-wrap: nowrap;
+    text-wrap: none;
+    white-space: nowrap;
+}
+.col-6.overflow-auto::-webkit-scrollbar{
+    height: 5px;
+    background-color:#5a6268 ;
+    border-radius: 4px;
+}
+.col-6.overflow-auto::-webkit-scrollbar-thumb{
+    height: 5px;
+    background-color: #0b2e13;
+    border-radius: 4px;
+}
